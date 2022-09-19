@@ -2,7 +2,7 @@ import requests
 import json
 from datetime import datetime
 
-apiKey = '7C56250591ACD590DA983DB1DA9B4BE3'
+apiKey = '' #put your api key here, get one from https://steamcommunity.com/dev/registerkey
 ID = input("steam id: ")
 
 basicInfoR = requests.get('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key='+apiKey+'&steamids='+ID)
